@@ -9,22 +9,15 @@ body{
 	background: #e6e6e6;
 }
 
-#cabecalho{
-	background-color: #f7b600;
-	padding: 15px;
-	text-align: center;
-}
 #logo, #menu{
 	padding: 10px;
 }
 #principal{
 	width: 920px;
 	margin: 0 auto;
+	padding: 25px;
 }
 
-#postagens, #menu-lateral{
-	background: orange;
-}
 #postagens{
 	width: 660px;
 	float: left;
@@ -37,12 +30,22 @@ body{
 	background: white;
 
 }
-#menu-Lateral{
+#menu-lateral{
 	width: 240px;
 	float: right;
 	/* Float é para deixar o elemento flutuante e posicionar da melhor maneira*/
 }
-
+.conteudo-lateral{
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.postagem-lateral{
+	font-size: 0.8em;
+	padding: 5px;
+	/*border-bottom: 1px dotted #CCC;*/
+	/* dotted é para ficar pontilhado*/
+}
 #rodape{
 	clear: both;
 	/* clear both é para remover o fluxo de elementos flutuantes*/
@@ -54,14 +57,30 @@ body{
 a{
 	text-decoration: none;
 }
-a:link, a:visited{
-	color: #FFF;
-	padding:8px 12px;
+
+a:link, a:visited {
+	color: #f7b600;
 }
 
 a:hover{
+	text-decoration: underline;
+}
+
+
+#cabecalho{
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
+}
+#cabecalho a:link, #cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#cabecalho a:hover{
 	color:#f7b600;
 	background: #FFF;
+	text-decoration: none;
 }
 
 /*Formatação em geral*/
@@ -74,14 +93,20 @@ h2{
 	color: #f7b600;
 }
 
+h3{
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
 .branco{
 	color: white;
 }
 
 .data-postagem {
-	font-size: 0.8em
+	font-size: 0.8em;
 	border-bottom:1px solid #CCC;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	display: block;
 }
+
